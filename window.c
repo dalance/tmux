@@ -66,8 +66,6 @@ static struct window_pane *window_pane_create(struct window *, u_int, u_int,
 		    u_int);
 static void	window_pane_destroy(struct window_pane *);
 
-static void	window_pane_set_watermark(struct window_pane *, size_t);
-
 static void	window_pane_read_callback(struct bufferevent *, void *);
 static void	window_pane_error_callback(struct bufferevent *, short, void *);
 
@@ -834,7 +832,7 @@ window_pane_destroy(struct window_pane *wp)
 	free(wp);
 }
 
-static void
+void
 window_pane_set_watermark(struct window_pane *wp, size_t size)
 {
 	wp->wmark_hits = 0;

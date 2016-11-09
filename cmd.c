@@ -97,6 +97,7 @@ extern const struct cmd_entry cmd_set_buffer_entry;
 extern const struct cmd_entry cmd_set_environment_entry;
 extern const struct cmd_entry cmd_set_hook_entry;
 extern const struct cmd_entry cmd_set_option_entry;
+extern const struct cmd_entry cmd_set_watermark_entry;
 extern const struct cmd_entry cmd_set_window_option_entry;
 extern const struct cmd_entry cmd_show_buffer_entry;
 extern const struct cmd_entry cmd_show_environment_entry;
@@ -186,6 +187,7 @@ const struct cmd_entry *cmd_table[] = {
 	&cmd_set_environment_entry,
 	&cmd_set_hook_entry,
 	&cmd_set_option_entry,
+	&cmd_set_watermark_entry,
 	&cmd_set_window_option_entry,
 	&cmd_show_buffer_entry,
 	&cmd_show_environment_entry,
